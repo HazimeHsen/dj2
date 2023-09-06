@@ -43,6 +43,17 @@ export default function NavbarDefault() {
         color="blue-gray"
         className="p-1 transition-all duration-300 hover:text-purple-800 font-bold text md:border-b-0 border-b w-full text-center md:w-[90px] ">
         <a
+          href="/#about"
+          className="flex items-center w-full text-center justify-center">
+          About Us
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 transition-all duration-300 hover:text-purple-800 font-bold text md:border-b-0 border-b w-full text-center md:w-[90px] ">
+        <a
           href="/#contact"
           className="flex items-center w-full text-center justify-center">
           Contact Us

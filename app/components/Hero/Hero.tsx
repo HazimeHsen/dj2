@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../Container";
 import styles from "./Hero.module.css"; // Import your CSS module for styling
 import Image from "next/image";
+import AutoTypeAnimation from "../auto-Type/AutoTypeAnimation";
 const Hero = () => {
   return (
     <div className="pt-[60px] h-screen " style={{}}>
@@ -22,6 +23,7 @@ const Hero = () => {
               className={`text-3xl md:text-5xl font-bold text-center md:max-w-[550px] md:text-start mb-1 ${styles.fadeIn}`}>
               Welcome to the DJ Mix Zone
             </h1>
+            <AutoTypeAnimation />
             <h2
               className={`text-xl md:text-2xl font-semibold text-center md:text-start mt-1 mb-2 ${styles.fadeIn}`}>
               Where Music Comes to Life

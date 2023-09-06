@@ -1,17 +1,18 @@
 import React from "react";
 import "./style.css";
+
 const AutoTypeAnimation = () => {
   return (
     <div className="wrapper z-10">
-      <ul className="dynamic-txts text-center font-bold text-xl z-10">
+      <ul className="dynamic-txts text-center md:text-start font-bold text-xl z-10">
         <li>
-          <span>Empowering Web3 Builders</span>
+          <span>Rocking the Beats</span>
         </li>
         <li>
-          <span>Igniting Web3 Possibilities</span>
+          <span>Mixing Sonic Magic</span>
         </li>
         <li>
-          <span>Navigating the Crypto Space</span>
+          <span>Creating Musical Journeys</span>
         </li>
       </ul>
     </div>

@@ -17,7 +17,7 @@ const Hero = () => {
             />
           </div>
           <div
-            className={`relative flex flex-col md:justify-center  heroSection ${styles.hero}`}>
+            className={`relative flex flex-col md:justify-center md:mt-0 mt-10 heroSection ${styles.hero}`}>
             <h1
               className={`text-3xl md:text-5xl font-bold text-center md:max-w-[550px] md:text-start mb-1 ${styles.fadeIn}`}>
               Welcome to the DJ Mix Zone

@@ -1,9 +1,33 @@
-import React from "react";
 import Container from "../Container";
 import Image from "next/image";
+import React, { useState, useEffect } from "react";
+
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 const About = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Percentage of the element in view
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div id="about" className="bg-gray-100 py-10">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+      }}
+      transition={{ duration: 0.5 }}
+      id="about"
+      className="bg-gray-100 py-10">
       <h1 className="font-bold text-3xl text-center mb-8">About Us</h1>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -31,7 +55,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

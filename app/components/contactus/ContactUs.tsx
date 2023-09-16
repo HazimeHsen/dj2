@@ -41,7 +41,7 @@ const ContactUs = () => {
           hidden: { opacity: 0, y: 50 },
         }}
         transition={{ duration: 0.5 }}
-        className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg px-5 bg-[#F1F1F1] py-10 shadow-lg">
+        className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg px-5 bg-gray-900 py-10 shadow-lg">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="w-full mb-10 text-center">
           <div className="flex flex-col justify-center items-center mt-5 font-semibold">

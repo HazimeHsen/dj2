@@ -37,7 +37,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: white;
+  background: black;
   border-left: 2px solid #999;
   animation: typing 3s steps(10) infinite;
 }

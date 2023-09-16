@@ -63,7 +63,7 @@ export default function NavbarDefault() {
   );
 
   return (
-    <Navbar className="w-full mx-auto max-w-screen-xl absolute top-0 left-0 py-4 border-0 px-4 lg:px-8 lg:py-4">
+    <Navbar className="w-full mx-auto bg-black max-w-screen-xl absolute top-0 left-0 py-4 border-0 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center text-[#999999] justify-between">
         <Typography as="a" href="/">
           Logo
